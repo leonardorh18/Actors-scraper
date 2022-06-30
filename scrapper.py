@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 import requests
-from bs4 import BeautifulSoup
+
 
 
 # retona os titulos das tabelas
@@ -19,7 +19,7 @@ def extract_titles(query):
     titles = [item.getText() for item in list_name]
     return titles
 
-# retorna informacoes de filmes/series/programas dos actores
+# retorna informacoes de filmes/series/programas dos atores
 def extract_actor_info(actor):
     try:
         
